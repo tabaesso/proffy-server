@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node dist/src/server.js",
     "dev": "tsnd --transpile-only --ignore-watch node_modules --respawn src/server.ts",
-    "knex:migrate": "knex --knexfile dist/knexfile.js migrate:latest",
-    "knex:migrate:rollback": "knex --knexfile dist/knexfile.js migrate:rollback",
+    "knex:migrate": "knex --knexfile knexfile.ts migrate:latest",
+    "knex:migrate:rollback": "knex --knexfile knexfile.ts migrate:rollback",
     "build": "tsc"
   },
   "devDependencies": {
